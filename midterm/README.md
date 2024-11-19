@@ -2,7 +2,8 @@
 - Purpose of this project is to predict the satisfaction level of airline passengers
 - Sample daatset is availanle in the file satisfacton.csv. It's taken from Kaggle [text](https://www.kaggle.com/datasets/johndddddd/customer-satisfaction)
 - Sample dataset contains various data elements like seat comfort, arrival / departure time convienience, food, flight distance, class of travel etc. 
-- Target variable is satisfaction_v2
+- Target variable is satisfaction_v2. Model will predict customer satisfaction for a given customer, possible values are 
+--<b>satisfied</b>, <b>neutral or dissatisfied</b>
 
 ## Instuctions to use the model
 Trained model has been saved to midterm.bin file using Pickle. The Dockerfile provided here creates an image that contains the model binary along with a python webservice that runs on 9696 port at the endpoint <b>/predict</b> 
