@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: htl-cancel-pred-deployment
+spec:
+  selector:
+    matchLabels:
+      app: hotel-prediction-service
+  template:
+    metadata:
+      labels:
+        app: hotel-prediction-service
+    spec:
+      containers:
+      - name: hotel-prediction-service
+        image: hotel-pred:v1
+        resources:
+          limits:
+            memory: "1028Mi"
+            cpu: "2500m"
+        ports:
+        - containerPort: 9696

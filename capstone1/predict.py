@@ -19,7 +19,7 @@ def predict():
         result = 'Yes'
 
     result = {
-        "Will this booking be cancelled ": f'{result},  Model Predicted value : {y_pred[0]}'
+        "Will this booking be canceled ": f'{result}'
     }
 
     return jsonify(result)
