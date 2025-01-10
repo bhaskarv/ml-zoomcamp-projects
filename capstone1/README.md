@@ -33,3 +33,13 @@
     - Alternatively, predict-test.py can be used as well to test. This script use requests module, so it needs to be installed before running the script
 
 ### Kubernetes Deployment
+- Deployed and tested the code on local kubernetes cluster. Manifest files for deployment and service configuration are available in the repo
+- Screen shots below provide information fo the deployment and as well as testing result
+![Hotel Cancel service nodel deployed on Local K8S cluster](k8s-local.png)
+- Setup port forwarding to the `htl-cancel-pred-service` to test the service locally
+![Setup portforwarding so that requests on local port 9696 are routerd to k8s service on port 80](port-forwarding.png)
+- Run the client application locally and verify the results
+     - Test with first booking json record, output is recorded below
+     ![First test case](test1.png)
+     - Update predict-test.py script to use second json record, run the script and verify the result
+     ![Second test case](test2.png)
