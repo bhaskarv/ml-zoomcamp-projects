@@ -34,7 +34,7 @@
 
 ### Kubernetes Deployment
 - Deployed and tested the code on local kubernetes cluster. Manifest files for deployment and service configuration are available in the repo
-- Screen shots below provide information fo the deployment and as well as testing result
+- Screen shots below provide information of the deployment and as well as testing result
 ![Hotel Cancel service nodel deployed on Local K8S cluster](k8s-local.png)
 - Setup port forwarding to the `htl-cancel-pred-service` to test the service locally
 ![Setup portforwarding so that requests on local port 9696 are routerd to k8s service on port 80](port-forwarding.png)
