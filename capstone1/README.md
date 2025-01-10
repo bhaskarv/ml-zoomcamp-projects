@@ -30,7 +30,7 @@
     - After downloading the code navigate to the capstone1 folder and build a docker image. Sample command <code>docker build -t project1:v1</code>. This creates a docker image which contains an executable prediction service
     - Create a docker container from the image project1:v1 using command <code>docker run --rm -p 9696:9696 project1:v1</code>. This brings up a docker container with an instance of prediction service running in it
     - Docker container created above exposes prediction service on local port 9696. Now test the service using any HTTP clients like postman, HTTPie etc. Sample data for testing is provided in the sample.json file for use, it contains two records. Service takes one booking records as input so use either one of the samples for testing
-    - Alternatively, predict-test.py can be used as well to test. This script use requests module, so it needs to be installed before running the script
+    - Alternatively, predict-test.py can be used as well to test. This script uses `requests` python library, so it needs to be installed before running the script
 
 ### Kubernetes Deployment
 - Deployed and tested the code on local kubernetes cluster. Manifest files for deployment and service configuration are available in the repo
